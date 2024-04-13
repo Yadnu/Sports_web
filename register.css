@@ -1,0 +1,32 @@
+.card {
+    perspective: 1000px; /* Set perspective for 3D effect */
+    transition: transform 0.5s;
+    margin: 10px; /* Add smooth transition */
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg) scale(1.05); /* Rotate card slightly and scale up on hover */
+  }
+  
+  .card-img-top {
+    transition: transform 0.5s; /* Add smooth transition for image */
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.1); /* Scale up image on hover */
+  }
+  
+  .card-body {
+    transform-style: preserve-3d; /* Preserve 3D transformations for card body */
+    backface-visibility: hidden; /* Hide backface of card body */
+    
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger font size for card titles */
+  }
+  
+  .card-text {
+    margin-bottom: 15px;/* Add space below text */
+  }
+  

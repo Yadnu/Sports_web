@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badminton Team Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-registration h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-registration .mb-3 {
+      margin-bottom: 20px;
+    }
+    .form-registration label {
+      font-weight: bold;
+    }
+    .form-registration .form-control {
+      border-radius: 20px;
+    }
+    .form-registration button[type="submit"] {
+      width: 100%;
+      border-radius: 20px;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .form-registration button[type="submit"]:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <form class="form-registration">
+    <h2 class="mb-4">Badminton Team Registration</h2>
+    <div class="mb-3">
+      <label for="teamName" class="form-label">Team Name</label>
+      <input type="text" class="form-control" id="teamName" name="teamName" required>
+    </div>
+    <div class="mb-3">
+      <label for="teamCaptain" class="form-label">Team Captain</label>
+      <input type="text" class="form-control" id="teamCaptain" name="teamCaptain" required>
+    </div>
+    <div class="mb-3">
+      <label for="contactEmail" class="form-label">Contact Email</label>
+      <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+    </div>
+    <div class="mb-3">
+      <label for="contactPhone" class="form-label">Contact Phone</label>
+      <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="singlesPlayers" class="form-label">Singles Players</label>
+      <input type="number" class="form-control" id="singlesPlayers" name="singlesPlayers" required>
+    </div>
+    <div class="mb-3">
+      <label for="doublesPlayers" class="form-label">Doubles Players</label>
+      <input type="number" class="form-control" id="doublesPlayers" name="doublesPlayers" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Team Registration</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<style>
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <h2 class="mb-4">Cricket Team Registration</h2>
+    <div class="mb-3">
+      <label for="teamName" class="form-label">Team Name</label>
+      <input type="text" class="form-control" id="teamName" name="teamName" required>
+    </div>
+    <div class="mb-3">
+      <label for="teamCaptain" class="form-label">Team Captain</label>
+      <input type="text" class="form-control" id="teamCaptain" name="teamCaptain" required>
+    </div>
+    <div class="mb-3">
+      <label for="contactEmail" class="form-label">Contact Email</label>
+      <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+    </div>
+    <div class="mb-3">
+      <label for="contactPhone" class="form-label">Contact Phone</label>
+      <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+    </div>
+    <div class="mb-3">
+      <label for="teamMembers" class="form-label">Team Members</label>
+      <textarea class="form-control" id="teamMembers" name="teamMembers" rows="3" required></textarea>
+      <small class="form-text text-muted">Enter names of team members separated by commas.</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="teamColors" class="form-label">Team Colors</label>
+      <input type="text" class="form-control" id="teamColors" name="teamColors" required>
+    </div>
+    <div class="mb-3">
+      <label for="sponsorship" class="form-label">Sponsorship</label>
+      <input type="text" class="form-control" id="sponsorship" name="sponsorship">
+    </div>
+    <div class="mb-3">
+      <label for="registrationFee" class="form-label">Registration Fee</label>
+      <input type="number" class="form-control" id="registrationFee" name="registrationFee" min="0" step="0.01">
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

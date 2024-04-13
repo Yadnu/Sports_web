@@ -1,0 +1,52 @@
+/* Navbar */
+body{
+  background-image: url('assets/dktecollege.jpg');
+  background-size: cover;
+}
+.navbar {
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #dee2e6; /* Add border at the bottom */
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove border from toggler */
+  }
+  
+  .navbar-toggler:focus {
+    outline: none; /* Remove outline when toggler is focused */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333; /* Default text color */
+    font-weight: bold; /* Make text bold */
+    margin-right: 15px; /* Add space between links */
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Change color of active link */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color of link on hover */
+  }
+  
+  /* Home link */
+  .navbar-nav .home-link {
+    margin-right: 0; /* Remove margin-right for home link */
+  }
+  
+  /* Sign In and Sign Up links */
+  .navbar-nav .sign-in-link,
+  .navbar-nav .sign-up-link {
+    color: #007bff; /* Blue color for sign-in and sign-up links */
+  }
+  
+  .navbar-nav .sign-in-link:hover,
+  .navbar-nav .sign-up-link:hover {
+    color: #0056b3; /* Darker blue color on hover */
+  }
+  
